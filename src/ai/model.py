@@ -61,7 +61,7 @@ def build_model(sequence_length, n_features):
     model.compile(optimizer='adam', loss='mean_squared_error')
     print("Model built!")
     return model
-cd Desktop
+
 model = build_model(sequence_length, n_features)
 model.fit(X_train, y_train, epochs=10, batch_size=32)
 
